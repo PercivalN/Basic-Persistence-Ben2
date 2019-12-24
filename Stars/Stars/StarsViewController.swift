@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  StarsViewController.swift
 //  Stars
 //
 //  Created by Percy Ngan on 12/24/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class StarsViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
