@@ -14,6 +14,7 @@
 		DD39CCB523B2D018001BFE2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD39CCB423B2D018001BFE2A /* Assets.xcassets */; };
 		DD39CCB823B2D018001BFE2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD39CCB623B2D018001BFE2A /* LaunchScreen.storyboard */; };
 		DDB0252C23B2D152006BE4DA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDB0252B23B2D152006BE4DA /* Default-568h@2x.png */; };
+		DDB0252E23B2D91B006BE4DA /* StarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB0252D23B2D91B006BE4DA /* StarTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		DD39CCB723B2D018001BFE2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD39CCB923B2D018001BFE2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDB0252B23B2D152006BE4DA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DDB0252D23B2D91B006BE4DA /* StarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				DD39CCBF23B2D0F9001BFE2A /* Resources */,
 				DD39CCAF23B2D017001BFE2A /* StarsViewController.swift */,
 				DD39CCC023B2D120001BFE2A /* Storyboards */,
+				DDB0252D23B2D91B006BE4DA /* StarTableViewCell.swift */,
 			);
 			path = Stars;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				DD39CCB023B2D017001BFE2A /* StarsViewController.swift in Sources */,
 				DD39CCAC23B2D017001BFE2A /* AppDelegate.swift in Sources */,
 				DD39CCAE23B2D017001BFE2A /* SceneDelegate.swift in Sources */,
+				DDB0252E23B2D91B006BE4DA /* StarTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

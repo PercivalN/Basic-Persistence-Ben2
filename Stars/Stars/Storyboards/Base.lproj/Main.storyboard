@@ -36,10 +36,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2n-9X-Vk2">
                                         <rect key="frame" x="0.0" y="0.0" width="187" height="30"/>
                                         <state key="normal" title="Print Stars"/>
+                                        <connections>
+                                            <action selector="printStarsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5PL-0N-OCu"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCE-Bl-EGt">
                                         <rect key="frame" x="195" y="0.0" width="187" height="30"/>
                                         <state key="normal" title="Create"/>
+                                        <connections>
+                                            <action selector="createButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ayh-zS-Vvq"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -47,7 +53,7 @@
                                 <rect key="frame" x="0.0" y="214" width="414" height="648"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="qyj-eB-pfO">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StarCell" id="qyj-eB-pfO" customClass="StarTableViewCell" customModule="Stars" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="49.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qyj-eB-pfO" id="dOp-F9-h7n">
@@ -55,7 +61,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Gtz-38-az1">
-                                                    <rect key="frame" x="8" y="0.0" width="398" height="49.5"/>
+                                                    <rect key="frame" x="20" y="0.0" width="378" height="49.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ooi-TA-8C6">
                                                             <rect key="frame" x="0.0" y="0.0" width="81" height="21"/>
@@ -73,10 +79,10 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Gtz-38-az1" firstAttribute="leading" secondItem="dOp-F9-h7n" secondAttribute="leading" constant="8" id="6Qf-QQ-EYy"/>
+                                                <constraint firstItem="Gtz-38-az1" firstAttribute="leading" secondItem="dOp-F9-h7n" secondAttribute="leading" constant="20" id="6Qf-QQ-EYy"/>
                                                 <constraint firstAttribute="bottom" secondItem="Gtz-38-az1" secondAttribute="bottom" id="7zP-cY-y3L"/>
                                                 <constraint firstItem="Gtz-38-az1" firstAttribute="centerY" secondItem="dOp-F9-h7n" secondAttribute="centerY" id="8SL-FA-RYC"/>
-                                                <constraint firstAttribute="trailing" secondItem="Gtz-38-az1" secondAttribute="trailing" constant="8" id="jEp-2F-CWT"/>
+                                                <constraint firstAttribute="trailing" secondItem="Gtz-38-az1" secondAttribute="trailing" constant="16" id="jEp-2F-CWT"/>
                                                 <constraint firstItem="Gtz-38-az1" firstAttribute="top" secondItem="dOp-F9-h7n" secondAttribute="top" id="ywN-rP-wZt"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -100,6 +106,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="G2e-MC-xkz"/>
+                    <connections>
+                        <outlet property="distanceTextField" destination="1kx-kT-x5V" id="Qfd-ln-6Kl"/>
+                        <outlet property="starNameTextField" destination="d06-Rh-yvY" id="Ry4-7h-Zop"/>
+                        <outlet property="tableView" destination="k3X-IG-ZzI" id="KPn-dL-qyk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
