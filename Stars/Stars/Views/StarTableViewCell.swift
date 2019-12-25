@@ -24,6 +24,6 @@ class StarTableViewCell: UITableViewCell {
 		guard let star = star else { return }
 
 		nameLabel.text = star.name
-		distanceLabel.text = "\(star.distance) light years away"
+		distanceLabel.text = star.distanceDescription
 	}
 }

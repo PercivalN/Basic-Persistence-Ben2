@@ -25,7 +25,9 @@ class StarsViewController: UIViewController {
 
 	// MARK: - Actions
 	@IBAction func printStars(_ sender: UIButton) {
+		print(starController.listStars())
 	}
+
 	@IBAction func createStar(_ sender: UIButton) {
 		guard let name = starNameTextField.text,
 			let distanceString = distanceTextField.text,
