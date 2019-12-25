@@ -20,4 +20,12 @@ class StarController {
 		return star
 	}
 
+	// MARK: - Persistence
+	private var persistentFileURL: URL? {
+		let fm = FileManager.default
+		guard let dir = fm.urls(for: .documentDirectory, in: .userDomainMask).first else { return nil }
+		return dir.appendingPathComponent("stars.plist")
+	}
+
+	
 }

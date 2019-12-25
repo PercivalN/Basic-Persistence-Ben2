@@ -68,7 +68,7 @@
 				DD39CCBF23B2D0F9001BFE2A /* Resources */,
 				DD83625E23B3E60B0012961B /* View Controllers */,
 				DD39CCC023B2D120001BFE2A /* Storyboards */,
-				DDB0252D23B2D91B006BE4DA /* StarTableViewCell.swift */,
+				DD83625F23B3F0250012961B /* Views */,
 				DD83625A23B332BB0012961B /* Models */,
 				DD83625D23B3599D0012961B /* Model Controllers */,
 			);
@@ -117,6 +117,14 @@
 				DD39CCAF23B2D017001BFE2A /* StarsViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DD83625F23B3F0250012961B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DDB0252D23B2D91B006BE4DA /* StarTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

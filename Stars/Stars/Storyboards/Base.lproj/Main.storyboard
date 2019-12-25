@@ -54,23 +54,23 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StarCell" id="qyj-eB-pfO" customClass="StarTableViewCell" customModule="Stars" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="49.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="54.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qyj-eB-pfO" id="dOp-F9-h7n">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="49.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="54.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Gtz-38-az1">
-                                                    <rect key="frame" x="20" y="0.0" width="378" height="49.5"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Gtz-38-az1">
+                                                    <rect key="frame" x="20" y="5" width="378" height="44.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ooi-TA-8C6">
-                                                            <rect key="frame" x="0.0" y="0.0" width="81" height="21"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="84" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="distance in light years" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZdF-Ms-1DP">
-                                                            <rect key="frame" x="0.0" y="29" width="123.5" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="24" width="123.5" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -80,10 +80,10 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Gtz-38-az1" firstAttribute="leading" secondItem="dOp-F9-h7n" secondAttribute="leading" constant="20" id="6Qf-QQ-EYy"/>
-                                                <constraint firstAttribute="bottom" secondItem="Gtz-38-az1" secondAttribute="bottom" id="7zP-cY-y3L"/>
+                                                <constraint firstAttribute="bottom" secondItem="Gtz-38-az1" secondAttribute="bottom" constant="5" id="7zP-cY-y3L"/>
                                                 <constraint firstItem="Gtz-38-az1" firstAttribute="centerY" secondItem="dOp-F9-h7n" secondAttribute="centerY" id="8SL-FA-RYC"/>
                                                 <constraint firstAttribute="trailing" secondItem="Gtz-38-az1" secondAttribute="trailing" constant="16" id="jEp-2F-CWT"/>
-                                                <constraint firstItem="Gtz-38-az1" firstAttribute="top" secondItem="dOp-F9-h7n" secondAttribute="top" id="ywN-rP-wZt"/>
+                                                <constraint firstItem="Gtz-38-az1" firstAttribute="top" secondItem="dOp-F9-h7n" secondAttribute="top" constant="5" id="ywN-rP-wZt"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
