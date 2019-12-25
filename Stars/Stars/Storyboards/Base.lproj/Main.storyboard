@@ -86,6 +86,10 @@
                                                 <constraint firstItem="Gtz-38-az1" firstAttribute="top" secondItem="dOp-F9-h7n" secondAttribute="top" id="ywN-rP-wZt"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="distanceLabel" destination="ZdF-Ms-1DP" id="zzA-p6-ghh"/>
+                                            <outlet property="nameLabel" destination="Ooi-TA-8C6" id="Ccj-kt-lzn"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

@@ -10,15 +10,20 @@ import UIKit
 
 class StarTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+	@IBOutlet weak var nameLabel: UILabel!
+	@IBOutlet weak var distanceLabel: UILabel!
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
-    }
+	var star: Star? {
+		didSet {
+			updateViews()
+		}
+	}
 
+	private func updateViews() {
+		guard let star = star else { return }
+
+		nameLabel.text = star.name
+		distanceLabel.text = "\(star.distance) light years away"
+	}
 }
