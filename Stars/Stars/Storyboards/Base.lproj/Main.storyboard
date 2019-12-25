@@ -37,14 +37,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="187" height="30"/>
                                         <state key="normal" title="Print Stars"/>
                                         <connections>
-                                            <action selector="printStarsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5PL-0N-OCu"/>
+                                            <action selector="printStars:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5PL-0N-OCu"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCE-Bl-EGt">
                                         <rect key="frame" x="195" y="0.0" width="187" height="30"/>
                                         <state key="normal" title="Create"/>
                                         <connections>
-                                            <action selector="createButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ayh-zS-Vvq"/>
+                                            <action selector="createStar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ayh-zS-Vvq"/>
                                         </connections>
                                     </button>
                                 </subviews>
